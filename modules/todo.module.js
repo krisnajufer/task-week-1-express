@@ -140,7 +140,7 @@ class _todo {
 
             return {
                 status: true,
-                code: 201,
+                code: 200,
                 data: add
             }
 
@@ -153,7 +153,7 @@ class _todo {
             }
         }
     }
-    
+
     destroyTodo = async (id) => {
         try {
             const destroy = await prisma.todo.delete({
